@@ -28,3 +28,5 @@ password.addEventListener("keypress", function(event) {
     desbloquear();
   }
 });
+
+password.focus();
