@@ -7,7 +7,8 @@ body {
   font-family: system-ui, sans-serif;
   color: white;
   /* background-color: white; */
-  background: #0c0c0f
+  background: #0c0c0f;
+  position: reative;
 }
 
 h1 {
@@ -65,4 +66,46 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background: #054fee;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  display: none;
+}
+
+.modal input,
+.modal button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.dark {
+  background: rgba(0,0,0,.5);
+}
+.primary {
+  background: #0b152b;
+}
+.message {
+  margin: 20px 0px;
+  padding: 10px;
+  font-size: small;
+  text-align: center;
+
+}
+
+.modal.hide {
+  display: block;
+}
+
+
+.message.danger {
+  background-color: red;
+  font-weight: bold;
 }
