@@ -3,14 +3,12 @@ const password = document.getElementById('password');
 const modal = document.getElementById('modal');
 let message = document.getElementById('message');
 
-
-
-function desbloquear(){
-  if(password.value === ''){
+function desbloquear() {
+  if (password.value === '') {
     message.innerHTML = 'Error, debe colocar una clave';
     message.classList.add('danger');
-  } else if(password.value === PASS){
-    modal.classList.remove('hide')
+  } else if (password.value === PASS) {
+    modal.classList.remove('hide');
   } else {
     message.innerHTML = 'Error, clave incorrecta';
     message.classList.add('danger');
@@ -18,10 +16,9 @@ function desbloquear(){
   password.value = '';
 }
 
-
-password.addEventListener("keypress", function(event) {
+password.addEventListener('keypress', function (event) {
   // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter") {
+  if (event.key === 'Enter') {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
@@ -30,3 +27,5 @@ password.addEventListener("keypress", function(event) {
 });
 
 password.focus();
+// password.value = PASS;
+// desbloquear();
